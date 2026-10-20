@@ -52,7 +52,7 @@
     };
   }
   function abrir(id) {
-    var url = 'https://script.google.com/macros/s/' + id + '/exec';
+    var url = 'https://script.google.com/a/macros/codelogistica.com/s/' + id + '/exec';   // con dominio: evita el fallo de Google cuando hay varias cuentas abiertas
     var listo = false;
     window.addEventListener('message', function (e) {
       if (!/(\.googleusercontent\.com|script\.google\.com)$/.test(String(e.origin || '').replace(/:\d+$/, ''))) return;
